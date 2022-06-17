@@ -1,7 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import { theme } from "../../styles/theme";
-
+import React from 'react';
+import styled from 'styled-components';
+import { theme } from '../../styles/theme';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPlay, faPause, faAngleLeft, faAngleRight, faBars } from '@fortawesome/free-solid-svg-icons';
 const Container = styled.div`
   width: 100%;
   background-color: ${(props) => props.theme.palette.triconblack};
@@ -88,31 +89,31 @@ export default function Header() {
   return (
     <Container>
       <Info>
-        <a className="logo" href="/">
+        <a className='logo' href='/'>
           🎨 CHECKLIST GALLERY
         </a>
-        <div className="login-info">
-          <a href="/">로그인</a>
-          <a href="/">전시 소개</a>
+        <div className='login-info'>
+          <a href='/'>로그인</a>
+          <a href='/'>전시 소개</a>
         </div>
-        <ul className="hamburger-bar">
-          햄버거
+        <ul className='hamburger-bar'>
+          <FontAwesomeIcon icon={faBars} />
           <li>김주현</li>
           <li>박민수</li>
           <li>설재혁</li>
           <li>이혜성</li>
-          <li>장덕준</li>
+          <li>정덕준</li>
           <li>김소리</li>
         </ul>
       </Info>
       <Members>
         <div></div>
-        <a href="/">김주현</a>
-        <a href="/">박민수</a>
-        <a href="/">설재혁</a>
-        <a href="/">이혜성</a>
-        <a href="/">장덕준</a>
-        <a href="/">김소리</a>
+        <a href='/'>김주현</a>
+        <a href='/'>박민수</a>
+        <a href='/'>설재혁</a>
+        <a href='/'>이혜성</a>
+        <a href='/'>장덕준</a>
+        <a href='/'>김소리</a>
       </Members>
     </Container>
   );
